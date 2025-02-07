@@ -186,12 +186,15 @@
       <h1>The Root</h1>
       <h2>Anchored in Love</h2>
       <p>If the flower represents the beauty of our relationship and the thorns symbolize its challenges, then the roots are what keep us grounded. They're the foundation of everything we've built together—the trust, the memories, the promises we've exchanged. Roots run deep, unseen but essential, holding the plant steady even in the harshest storms.</p>
-      <p>Our roots started growing the moment we decided to give this a chance. From late-night conversations to sharing our fears and dreams, every interaction added another strand to the web that binds us. Even though we've never met physically, our roots have stretched across distances, anchoring us to each other in ways I never thought possible.</p>
-      <p>Now, as we move forward, I want to nurture these roots. I promise to be a better boyfriend, to love you more, to give you even more attention (12 hours just like you said). I'll tell my parents about you—not because I feel obligated, but because I'm proud of us. Proud of the love we've cultivated despite the odds. Just give me some time and have faith in me?</p>
+      <p>Our roots started growing the moment we decided to give this a chance. From late night conversations to sharing our fears and dreams, every interaction added another strand to the web that binds us. Even though we've never met physically, our roots have stretched across distances, anchoring us to each other in ways I never thought possible.</p>
+      <p>Now, as we move forward, I want to nurture these roots. I promise to be a better boyfriend, to love you more, to give you even more attention (12 hours just like you said). I am proud of the love we've cultivated despite the odds. Just give me some time and have faith in us love</p>
       <p>I dream of the day when I’ll finally meet you in person. When I’ll hold your hand, look into your eyes, and see the woman who has become my entire world. Until then, I’ll continue watering our roots with patience, care, and unwavering devotion. Because you, Annie, are worth every effort. You’re my home, my safe haven, my forever bloom.
-      <p>As I write this, I imagine our roots growing stronger with each passing day—stretching deeper into the soil, anchoring us firmly against whatever storms may come. Roots aren’t glamorous; they’re hidden beneath the surface, buried in the dirt, often overlooked. But they’re the lifeline of the rose, quietly working below ground to keep it standing tall and thriving above. Love is like that too—it’s not just about the flowers we see on the surface, the beautiful moments that catch our eye. It’s also about the unseen work, the quiet strength that grows in the messiness of life.
-        The dirt represents everything we’ve been through—the challenges, the doubts, the hard conversations. It’s where we dig in, where we hold tight to each other even when things get tough. And though dirt might seem ordinary or unremarkable, it’s what nourishes the roots, giving them the stability they need to support the bloom. Our love has grown in that same way—through moments both bright and messy, tender and raw. Every struggle, every laugh, every tear—it all feeds the roots that sustain us.
-        </p>
+      <p>As I write this, I imagine our roots growing stronger with each passing day going deeper into the soil, anchoring us firmly against whatever storms may come. Roots aren’t glamorous; they’re hidden beneath the surface, buried in the dirt, often overlooked. But they’re the lifeline of the rose, quietly working below ground to keep it standing tall and thriving above. Love is like that too. it’s not just about the flowers we see on the surface, the beautiful moments that catch our eye. It’s also about the hidden roots, the quiet strength that grows in the messiness of life.
+       The dirt represents everything we’ve been through—the challenges, the doubts, the hard conversations. It’s where we dig in, where we hold tight to each other even when things get tough. And though dirt might seem ordinary or unremarkable, it’s what nourishes the roots, giving them the nutrients they need to support the bloom. Turns out love is like cellular respiration: it takes energy, effort, and a little bit of chemistry to keep growing stronger(yeah, I’m a bio student now).
+
+Our love has grown in that same way—through moments both bright and messy, tender and raw. Every struggle, every laugh, every tear—it all feeds the roots that sustain us.</p>
+
+
       <p>No matter what storms come our way, I know we’ll weather them together. Because love isn’t just about the flowers we admire from afar—it’s about the roots that strengthen in the dirt, holding fast no matter how hard the winds blow. And our roots? They’re unbreakable.</p>  
     </p>
     </div>
@@ -325,6 +328,12 @@
         // Set the volume when the widget is ready
         widget.bind(SC.Widget.Events.READY, () => {
             widget.setVolume(30); // Set volume to 30% (range is 0-100)
+            widget.setOptions({ loop: true });
+            
+        });
+       // Handle user interaction for mobile devices
+        document.addEventListener('touchstart', () => {
+            widget.play(); // Start playback on first touch
         });
   </script>
    <script src="https://w.soundcloud.com/player/api.js"></script>
